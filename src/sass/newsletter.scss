@@ -1,0 +1,66 @@
+/* newsletter */
+.newsletter {
+  background-image: url(../images/banner-images/newsletter-baner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 135px;
+  background-size: cover;
+}
+.newsletter-cover {
+  margin-left: auto;
+  margin-right: auto;
+}
+.newsletter__title {
+  font-family: $minor-font-family;
+  font-size: 48px;
+  font-weight: 900;
+  color: $color-title;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  &::after {
+    display: flex;
+    content: url(../images/icons/last-title-border.png);
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
+.newsletter__mail--subscribe {
+  color: $color-main;
+  font-family: $main-font-family;
+  font-size: 16px;
+  text-align: center;
+}
+.email-form {
+  display: flex;
+  justify-content: center;
+}
+.email-input {
+  border-radius: 5px 0px 0px 5px;
+  width: 540px;
+  height: 60px;
+  color: $color-main;
+  font-family: $main-font-family;
+  color: $color-text;
+  font-size: 16px;
+  text-align: center;
+  padding-left: 10px;
+  border: 3px solid $color-main;
+}
+.email-button {
+  font-family: $main-font-family;
+  border-radius: 0px 5px 5px 0px;
+  width: 90px;
+  height: 60px;
+  background-color: $color-main-hover;
+  background-image: url(../images/icons/email-sent-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  border-color: $color-main;
+  border: 3px solid $color-main;
+  &:hover,
+  &:focus {
+    transform: translateX(-10px);
+  }
+}

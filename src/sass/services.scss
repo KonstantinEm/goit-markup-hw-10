@@ -1,0 +1,68 @@
+/* services */
+
+.service-advantages__list {
+  list-style-type: none;
+  display: flex;
+  margin: unset;
+  padding: unset;
+  justify-content: center;
+}
+.service-advantages__icon--settings {
+  width: 70px;
+  height: 70px;
+  fill: $color-main-hover;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 30px;
+}
+.service-advantages__icon--money-back {
+  width: 70px;
+  height: 70px;
+  fill: $color-main-hover;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 30px;
+}
+.service-advantages__icon--worldwide {
+  width: 70px;
+  height: 70px;
+  fill: $color-main-hover;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 30px;
+}
+.service-advantages__icon--shipping {
+  width: 70px;
+  height: 70px;
+  fill: $color-main-hover;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 30px;
+}
+.service-advantages__cover {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.service-advantages__title {
+  text-align: center;
+  font-family: $main-font-family;
+  font-size: 18px;
+  color: $color-text;
+  text-transform: uppercase;
+  margin: unset;
+  padding: unset;
+  margin-bottom: 30px;
+}
+.service-advantages__description {
+  text-align: center;
+  margin: unset;
+  padding: unset;
+  font-family: $main-font-family;
+  font-size: 14px;
+  line-height: 24px;
+  color: $color-text;
+}

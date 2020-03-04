@@ -1,0 +1,104 @@
+/* new collection */
+.new-collection__cover {
+  background-color: $color-fond;
+}
+.section-title {
+  font-family: $minor-font-family;
+  font-size: 48px;
+  font-weight: 900;
+  color: $color-title;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  margin-bottom: 75px;
+  &::after {
+    display: flex;
+    content: url(../images/icons/title-border.png);
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
+.new-collection {
+  width: 1110px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.new-collection__list {
+  all: unset;
+  display: flex;
+  list-style-type: none;
+}
+.card__link {
+  text-decoration: none;
+  width: 255px;
+}
+.card__description {
+  flex-basis: 200px;
+  font-family: $minor-font-family;
+  text-transform: uppercase;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  color: $color-main;
+  margin: 0;
+  height: 40px;
+  background-color: $color-label-background;
+  padding-left: 10px;
+}
+/* =========================== */
+@keyframes card__description-change-color {
+  0% {
+    background-color: $color-label-background;
+  }
+  100% {
+    background-color: $color-main-hover;
+  }
+}
+.card:hover .card__description,
+.card:focus .card__description {
+  animation: card__description-change-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    forwards;
+}
+@keyframes card__price-change-color {
+  0% {
+    background-color: $color-pad-value;
+  }
+  100% {
+    background-color: $color-minor-hover;
+  }
+}
+.card:hover .card__price,
+.card:focus .card__price {
+  animation: card__price-change-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    forwards;
+}
+.card__description:hover,
+.card__description:focus {
+  animation: card__description-change-color 2ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card__description:hover .card__price {
+  background-color: $color-minor-hover;
+}
+.card__description:focus .card__price {
+  background-color: $color-minor-hover;
+}
+.card__price {
+  color: $color-main;
+  background-color: $color-pad-value;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 55px;
+  margin-left: auto;
+  &:hover,
+  &:focus {
+    background-color: $color-minor-hover;
+  }
+}
+.new-collection__item {
+  flex-basis: calc(100% / 4 - 22.5px);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}

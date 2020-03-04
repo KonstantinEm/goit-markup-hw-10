@@ -1,0 +1,152 @@
+/* ---card actions--- */
+.card-actions__pinch .card-action {
+  all: unset;
+  width: 50px;
+  height: 50px;
+  padding-right: 4px;
+  border: 1px solid $color-main;
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: none;
+}
+.action__icon--like {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  fill: $color-main;
+  right: 61%;
+  padding-left: auto;
+  padding-right: auto;
+}
+.action__icon--share {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  fill: $color-main;
+  left: 50%;
+  padding-left: auto;
+  padding-right: auto;
+}
+.action__icon--time {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 81%;
+  width: 40px;
+  height: 40px;
+  fill: $color-main;
+}
+.action__icon--cart {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 15%;
+  bottom: -10%;
+  width: 40px;
+  height: 40px;
+  fill: $color-main;
+}
+.action--cart {
+  all: unset;
+  width: 165px;
+  height: 50px;
+  background-color: $color-label-background;
+  border: 1px solid $color-main;
+  background-repeat: no-repeat;
+  background-position: 20px 10px;
+  font-size: 14px;
+  letter-spacing: 0px;
+  line-height: 32px;
+  color: $color-main;
+  font-family: $main-font-family;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+.card {
+  width: 255px;
+  position: relative;
+  border-radius: 10px;
+}
+.card .card__overlay {
+  position: relative;
+  overflow: hidden;
+  &::before {
+    opacity: 0;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 92%;
+    height: 95%;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+/* ============= */
+@keyframes overlay-appear {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes button-appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.card:hover .card__overlay::before,
+.card:focus .card__overlay::before {
+  animation: overlay-appear 250ms linear;
+  opacity: 1;
+}
+.card:hover .card-actions,
+.card:focus .card-actions {
+  animation-name: button-appear;
+  animation-delay: 250ms;
+  animation-duration: 250ms;
+  animation-fill-mode: forwards;
+}
+.card-actions {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  padding: 4px;
+}
+
+/* ================= */
+@keyframes card-actions__pinch-butt-change-color {
+  0% {
+    background-color: none;
+  }
+  100% {
+    background-color: $color-main-hover;
+  }
+}
+.card-actions__pinch .card-action:hover,
+.card-actions__pinch .card-action:focus {
+  animation: card-actions__pinch-butt-change-color 250ms
+    cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+@keyframes action--cart-change-color {
+  0% {
+    background-color: $color-label-background;
+  }
+  100% {
+    background-color: $color-main-hover;
+  }
+}
+.action--cart:hover,
+.action--cart:focus {
+  animation: action--cart-change-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    forwards;
+}
+/* ======================== */

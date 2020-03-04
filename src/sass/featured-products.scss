@@ -1,0 +1,23 @@
+/* featured products */
+
+.featured-products__cover {
+  background-color: $color-main;
+}
+.featured-products {
+  margin-left: auto;
+  margin-right: auto;
+}
+.featured-products__list {
+  all: unset;
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+.featured-products__item {
+  flex-basis: calc(100% / 4 - 22.5px);
+  margin-top: 30px;
+  &:not(:nth-child(4n)) {
+    margin-right: 30px;
+  }
+}
