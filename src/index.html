@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>HW-10</title>
+    <!-- Сюда будет всталена ссылка на файл стилей -->
+    <!-- inject:css -->
+    <!-- endinject -->
+  </head>
+
+  <body>
+    <!-- N A V I G A T I O N:user navigation;site navigation -->
+
+    <!-- user navigation -->
+    <header class="stiky">
+      <div class="account-nav__cover">
+        <div class="account-nav">
+          <a href="tel:+123123456789" class="account-nav__call">
+            <svg class="account-nav__icon--call">
+              <use href="./images/icons/icon-sprite.svg#icon-phone"></use>
+            </svg>
+            123-123456789</a>
+          <a href="mailto:yourmail@mysite.com" class="account-nav__mail">
+            <svg class="account-nav__icon--mail">
+              <use href="./images/icons/icon-sprite.svg#icon-mail"></use>
+            </svg>
+            info@itntcom</a>
+          <ul class="account-nav__list">
+            <li class="account-nav__item">
+              <a class="account-nav__link" href="">My Account</a>
+            </li>
+            <li class="account-nav__item">
+              <a class="account-nav__link" href="">Wish list</a>
+            </li>
+            <li class="account-nav__item">
+              <a class="account-nav__link" href="">Cart</a>
+            </li>
+            <li class="account-nav__item">
+              <a class="account-nav__link" href="">Checkout</a>
+            </li>
+            <li class="account-nav__item">
+              <a class="account-nav__link" href="">Login/Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- site navigation -->
+    <div class="site-nav">
+      <nav class="site-nav__bar">
+        <a class="site-nav__logo" href=""><span class="logo-m">m</span> art</a>
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="">Home</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="">About Us</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="">Page</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="">Shop</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="">Blog</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- M A I N :hero; services; new-collection; featured-products; latest-news -->
+    <main>
+      <!-- hero -->
+      <section class="hero section">
+        <div class="hero-message">
+          <h1 class="hero-message__title--1">
+            Dresses
+            <span class="hero-message_ampersand">&#38;</span>
+            Jeans
+            <br>
+
+          <span class="hero-message__title--2">
+            From our famous brands
+            <span class="hero-message__sale">Sale</span>
+          </h1>
+          <a class="hero-message__link" href="">Buy now</a>
+        </div>
+      </section>
+
+      <!-- services -->
+      <section class="services section">
+        <div class="service-advantages container">
+          <ul class="service-advantages__list">
+            <li class="service-advantages__item--setting">
+              <svg class="service-advantages__icon--settings">
+                <use href="./images/icons/icon-sprite.svg#icon-cog"></use>
+              </svg>
+              <div class="service-advantages__cover">
+                <h3 class="service-advantages__title">Setting</h3>
+                <p class="service-advantages__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores ipsum reprehenderit nesciunt non sed dicta explicabo
+                  repellat facilis eius accusamus distinctio quas, neque
+                  delectus pariatur!
+                </p>
+              </div>
+            </li>
+
+            <li class="service-advantages__item--money-back">
+              <svg class="service-advantages__icon--money-back">
+                <use href="./images/icons/icon-sprite.svg#icon-coin-dollar"></use>
+              </svg>
+              <div class="service-advantages__cover">
+                <h3 class="service-advantages__title">Money back</h3>
+                <p class="service-advantages__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores ipsum reprehenderit nesciunt non sed dicta explicabo
+                  repellat facilis eius accusamus distinctio quas, neque
+                  delectus pariatur!
+                </p>
+              </div>
+            </li>
+
+            <li class="service-advantages__item--worldwide">
+              <svg class="service-advantages__icon--worldwide">
+                <use href="./images/icons/icon-sprite.svg#icon-sphere"></use>
+              </svg>
+              <div class="service-advantages__cover">
+                <h3 class="service-advantages__title">Worldwide shipping</h3>
+                <p class="service-advantages__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores ipsum reprehenderit nesciunt non sed dicta explicabo
+                  repellat facilis eius accusamus distinctio quas, neque
+                  delectus pariatur!
+                </p>
+              </div>
+            </li>
+
+            <li class="service-advantages__item--shipping">
+              <svg class="service-advantages__icon--shipping">
+                <use href="./images/icons/icon-sprite.svg#icon-compass"></use>
+              </svg>
+              <div class="service-advantages__cover">
+                <h3 class="service-advantages__title">Worldwide shipping</h3>
+                <p class="service-advantages__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores ipsum reprehenderit nesciunt non sed dicta explicabo
+                  repellat facilis eius accusamus distinctio quas, neque
+                  delectus pariatur!
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- New collection -->
+      <section class="new-collection__cover section">
+          <h2 class="section-title">New collection</h2>
+        <div class="new-collection container">
+          <ul class="new-collection__list">
+            <li class="new-collection__item">
+              <div class="card">
+                <a href="" class="card__link">
+                  <div class="card__overlay">
+                    <img
+                      srcset="./images/card-images/card-image-1@2x.png 510w"
+                      src="./images/card-images/card-image-1.png"
+                      alt="Product image"
+                      width="255"
+                      sizes="255px
+                      class="card__image"/>
+                  </div>
+                  <h3 class="card__description">
+                    blue tshirt <span class="card__price">$26</span>
+                  </h3>
+                </a>
+                <div class="card-actions">
+                  <div class="card-actions__pinch">
+                    <button class="card-action action--like">
+                      <svg class="action__icon--like">
+                      <use href="./images/icons/icon-sprite.svg#icon-heart"></use>
+                    </svg></button>
+                    <button class="card-action action--share">
+                      <svg class="action__icon--share">
+                        <use href="./images/icons/icon-sprite.svg#icon-share"></use>
+                      </svg>
+                    </button>
+                    <button class="card-action action--time">
+                      <svg class="action__icon--time">
+                        <use href="./images/icons/icon-sprite.svg#icon-compass2"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="card-action action--cart">
+                    <svg class="action__icon--cart">
+                      <use href="./images/icons/icon-sprite.svg#icon-cart"></use>
+                    </svg>Add to cart</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="new-collection__item">
+              <div class="card">
+                <a href="" class="card__link">
+                  <div class="card__overlay">
+                    <img
+                    srcset="./images/card-images/card-image-2@2x.png 510w"
+                    src="./images/card-images/card-image-2.png"
+                    alt="Product image"
+                    width="255"
+                    sizes="255px
+                    class="card__image"/>
+                    
+                  </div>
+                  <h3 class="card__description">
+                    woman shirt <span class="card__price">$31</span>
+                  </h3>
+                </a>
+                <div class="card-actions">
+                  <div class="card-actions__pinch">
+                    <button class="card-action action--like">
+                      <svg class="action__icon--like">
+                      <use href="./images/icons/icon-sprite.svg#icon-heart"></use>
+                    </svg></button>
+                    <button class="card-action action--share">
+                      <svg class="action__icon--share">
+                        <use href="./images/icons/icon-sprite.svg#icon-share"></use>
+                      </svg>
+                    </button>
+                    <button class="card-action action--time">
+                      <svg class="action__icon--time">
+                        <use href="./images/icons/icon-sprite.svg#icon-compass2"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="card-action action--cart">
+                    <svg class="action__icon--cart">
+                      <use href="./images/icons/icon-sprite.svg#icon-cart"></use>
+                    </svg>Add to cart</button>
+                </div>
+            </li>
+
+            <li class="new-collection__item">
+              <div class="card">
+                <a href="" class="card__link">
+                  <div class="card__overlay">
+                    <img
+                    srcset="./images/card-images/card-image-3@2x.png 510w"
+                    src="./images/card-images/card-image-3.png"
+                    alt="Product image"
+                    width="255"
+                    sizes="255px
+                    class="card__image"/>
+                  
+                  </div>
+                  <h3 class="card__description">
+                    yellow tshirt <span class="card__price">$21</span>
+                  </h3>
+                </a>
+                <div class="card-actions">
+                  <div class="card-actions__pinch">
+                    <button class="card-action action--like">
+                      <svg class="action__icon--like">
+                      <use href="./images/icons/icon-sprite.svg#icon-heart"></use>
+                    </svg></button>
+                    <button class="card-action action--share">
+                      <svg class="action__icon--share">
+                        <use href="./images/icons/icon-sprite.svg#icon-share"></use>
+                      </svg>
+                    </button>
+                    <button class="card-action action--time">
+                      <svg class="action__icon--time">
+                        <use href="./images/icons/icon-sprite.svg#icon-compass2"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="card-action action--cart">
+                    <svg class="action__icon--cart">
+                      <use href="./images/icons/icon-sprite.svg#icon-cart"></use>
+                    </svg>Add to cart</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="new-collection__item">
+              <div class="card">
+                <a href="" class="card__link">
+                  <div class="card__overlay">
+                    <img
+                    srcset="./images/card-images/card-image-4@2x.png 510w"
+                    src="./images/card-images/card-image-4.png"
+                    alt="Product image"
+                    width="255"
+                    sizes="255px
+                    class="card__image"/>
+                  
+                  </div>
+                  <h3 class="card__description">
+                    cool lingerie <span class="card__price">$56</span>
+                  </h3>
+                </a>
+                <div class="card-actions">
+                  <div class="card-actions__pinch">
+                    <button class="card-action action--like">
+                      <svg class="action__icon--like">
+                      <use href="./images/icons/icon-sprite.svg#icon-heart"></use>
+                    </svg></button>
+                    <button class="card-action action--share">
+                      <svg class="action__icon--share">
+                        <use href="./images/icons/icon-sprite.svg#icon-share"></use>
+                      </svg>
+                    </button>
+                    <button class="card-action action--time">
+                      <svg class="action__icon--time">
+                        <use href="./images/icons/icon-sprite.svg#icon-compass2"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="card-action action--cart">
+                    <svg class="action__icon--cart">
+                      <use href="./images/icons/icon-sprite.svg#icon-cart"></use>
+                    </svg>Add to cart</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- featured products -->
+      </section>
+      <section class="featured-products__cover section">
+          <h2 class="section-title">Featured products</h2>
+        <div class="featured-products container">
+          <ul class="featured-products__list">
+            <li class="featured-products__item">
+              <div class="card">
+                <a class="card__link" href="">
+                  <div class="card__overlay">
+                    <img
+                    srcset="./images/card-images/card-image-5@2x.png 510w"
+                    src="./images/card-images/card-image-5.png"
+                    alt="Product image"
+                    width="255"
+                    sizes="255px
+                    class="card__image"
+                    />
+                  </div>
+                  <h3 class="card__description">
+                    blue tshirt <span class="card__price">$56</span>
+                  </h3>
+                </a>
+                <div class="card-actions">
+                  <div class="card-actions__pinch">
+                    <button class="card-action action--like">
+                      <svg class="action__icon--like">
+                      <use href="./images/icons/icon-sprite.svg#icon-heart"></use>
+                    </svg></button>
+                    <button class="card-action action--share">
+                      <svg class="action__icon--share">
+                        <use href="./images/icons/icon-sprite.svg#icon-share"></use>
+                      </svg>
+                    </button>
+                    <button class="card-action action--time">
+                      <svg class="action__icon--time">
+                        <use href="./images/icons/icon-sprite.svg#icon-compass2"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="card-action action--cart">
+                    <svg class="action__icon--cart">
+                      <use href="./images/icons/icon-sprite.svg#icon-cart"></use>
+                    </svg>Add to cart</button>
+                </div>
+              </div>
+            </li>
+            <li class="featured-products__item">
+              <div class="card">
+                <a class="card__link" href="">
+                  <div class="card__overlay">
+                    <img
+                    srcset="./images/card-images/card-image-6@2x.png 510w"
+                    src="./images/card-images/card-image-6.png"
+                    alt="Product image"
+                    width="255"
+                    sizes="255px
+                    class="card__image"
+                    />
+                  </div>
+                  <h3 class="card__description">
+                    woman shirt <span class="card__price">$56</span>
+                  </h3>
+                </a>
+                <div class="card-actions">
+                  <div class="card-actions__pinch">
+                    <button class="card-action action--like">
+                      <svg class="action__icon--like">
+                      <use href="./images/icons/icon-sprite.svg#icon-heart"></use>
+                    </svg></button>
+                    <button class="card-action action--share">
+                      <svg class="action__icon--share">
+                        <use href="./images/icons/icon-sprite.svg#icon-share"></use>
+                      </svg>
+                    </button>
+                    <button class="card-action action--time">
+                      <svg class="action__icon--time">
+                        <use href="./images/icons/icon-sprite.svg#icon-compass2"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="card-action action--cart">
+                    <svg class="action__icon--cart">
+                      <use href="./images/icons/icon-sprite.svg#icon-cart"></use>
+                    </svg>Add to cart</button>
+                </div>
+              </div>
+            </li>
+            <li class="featured-products__item">
+              <div class="card">
+                <a class="card__link" href="">
+                  <div class="card__overlay">
+                    <img
+                    srcset="./images/card-images/card-image-7@2x.png 510w"
+                    src="./images/card-images/card-image-7.png"
+                    alt="Product image"
+                    width="255"
+                    sizes="255px
+                    class="card__image"
+                    />
+                  </div>
+                  <h3 class="card__description">
+                    yellow tshirt <span class="card__price">$56</span>
+                  </h3>
+                </a>
+                <div class="card-actions">
+                  <div class="card-actions__pinch">
+                    <button class="card-action action--like">
+                      <svg class="action__icon--like">
+                      <use href="./images/icons/icon-sprite.svg#icon-heart"></use>
+                    </svg></button>
+                    <button class="card-action action--share">
+                      <svg class="action__icon--share">
+                        <use href="./images/icons/icon-sprite.svg#icon-share"></use>
+                      </svg>
+                    </button>
+                    <button class="card-action action--time">
+                      <svg class="action__icon--time">
+                        <use href="./images/icons/icon-sprite.svg#icon-compass2"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="card-action action--cart">
+                    <svg class="action__icon--cart">
+                      <use href="./images/icons/icon-sprite.svg#icon-cart"></use>
+                    </svg>Add to cart</button>
+                </div>
+              </div>
+            </li>
+            <li class="featured-products__item">
+              <div class="card">
+                <a class="card__link" href="">
+                  <div class="card__overlay">
+                    <img
+                    srcset="./images/card-images/card-image-8@2x.png 510w"
+                    src="./images/card-images/card-image-8.png"
+                    alt="Product image"
+                    width="255"
+                    sizes="255px
+                    class="card__image"
+                    />
+                  </div>
+                  <h3 class="card__description">
+                    cool lingerie <span class="card__price">$56</span>
+                  </h3>
+                </a>
+                <div class="card-actions">
+                  <div class="card-actions__pinch">
+                    <button class="card-action action--like">
+                      <svg class="action__icon--like">
+                      <use href="./images/icons/icon-sprite.svg#icon-heart"></use>
+                    </svg></button>
+                    <button class="card-action action--share">
+                      <svg class="action__icon--share">
+                        <use href="./images/icons/icon-sprite.svg#icon-share"></use>
+                      </svg>
+                    </button>
+                    <button class="card-action action--time">
+                      <svg class="action__icon--time">
+                        <use href="./images/icons/icon-sprite.svg#icon-compass2"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="card-action action--cart">
+                    <svg class="action__icon--cart">
+                      <use href="./images/icons/icon-sprite.svg#icon-cart"></use>
+                    </svg>Add to cart</button>
+                </div>
+              </div>
+            </li>
+            <li class="featured-products__item">
+              <div class="card">
+                <a class="card__link" href="">
+                  <div class="card__overlay">
+                    <img
+                    srcset="./images/card-images/card-image-9@2x.png 510w"
+                    src="./images/card-images/card-image-9.png"
+                    alt="Product image"
+                    width="255"
+                    sizes="255px
+                    class="card__image"
+                    />
+                  </div>
+                  <h3 class="card__description">
+                    blue tshirt <span class="card__price">$56</span>
+                  </h3>
+                </a>
+                <div class="card-actions">
+                  <div class="card-actions__pinch">
+                    <button class="card-action action--like">
+                      <svg class="action__icon--like">
+                      <use href="./images/icons/icon-sprite.svg#icon-heart"></use>
+                    </svg></button>
+                    <button class="card-action action--share">
+                      <svg class="action__icon--share">
+                        <use href="./images/icons/icon-sprite.svg#icon-share"></use>
+                      </svg>
+                    </button>
+                    <button class="card-action action--time">
+                      <svg class="action__icon--time">
+                        <use href="./images/icons/icon-sprite.svg#icon-compass2"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="card-action action--cart">
+                    <svg class="action__icon--cart">
+                      <use href="./images/icons/icon-sprite.svg#icon-cart"></use>
+                    </svg>Add to cart</button>
+                </div>
+              </div>
+            </li>
+            <li class="featured-products__item">
+              <div class="card">
+                <a class="card__link" href="">
+                  <div class="card__overlay">
+                    <img
+                    srcset="./images/card-images/card-image-10@2x.png 510w"
+                    src="./images/card-images/card-image-10.png"
+                    alt="Product image"
+                    width="255"
+                    sizes="255px
+                    class="card__image"
+                    />
+                  </div>
+                  <h3 class="card__description">
+                    woman shirt <span class="card__price">$56</span>
+                  </h3>
+                </a>
+                <div class="card-actions">
+                  <div class="card-actions__pinch">
+                    <button class="card-action action--like">
+                      <svg class="action__icon--like">
+                      <use href="./images/icons/icon-sprite.svg#icon-heart"></use>
+                    </svg></button>
+                    <button class="card-action action--share">
+                      <svg class="action__icon--share">
+                        <use href="./images/icons/icon-sprite.svg#icon-share"></use>
+                      </svg>
+                    </button>
+                    <button class="card-action action--time">
+                      <svg class="action__icon--time">
+                        <use href="./images/icons/icon-sprite.svg#icon-compass2"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="card-action action--cart">
+                    <svg class="action__icon--cart">
+                      <use href="./images/icons/icon-sprite.svg#icon-cart"></use>
+                    </svg>Add to cart</button>
+                </div>
+              </div>
+            </li>
+            <li class="featured-products__item">
+              <div class="card">
+                <a class="card__link" href="">
+                  <div class="card__overlay">
+                    <img
+                    srcset="./images/card-images/card-image-11@2x.png 510w"
+                    src="./images/card-images/card-image-11.png"
+                    alt="Product image"
+                    width="255"
+                    sizes="255px
+                    class="card__image"
+                    />
+                  </div>
+
+                  <h3 class="card__description">
+                    yellow tshirt <span class="card__price">$56</span>
+                  </h3>
+                </a>
+                <div class="card-actions">
+                  <div class="card-actions__pinch">
+                    <button class="card-action action--like">
+                      <svg class="action__icon--like">
+                      <use href="./images/icons/icon-sprite.svg#icon-heart"></use>
+                    </svg></button>
+                    <button class="card-action action--share">
+                      <svg class="action__icon--share">
+                        <use href="./images/icons/icon-sprite.svg#icon-share"></use>
+                      </svg>
+                    </button>
+                    <button class="card-action action--time">
+                      <svg class="action__icon--time">
+                        <use href="./images/icons/icon-sprite.svg#icon-compass2"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="card-action action--cart">
+                    <svg class="action__icon--cart">
+                      <use href="./images/icons/icon-sprite.svg#icon-cart"></use>
+                    </svg>Add to cart</button>
+                </div>
+              </div>
+            </li>
+            <li class="featured-products__item">
+              <div class="card">
+                <a class="card__link" href="">
+                  <div class="card__overlay">
+                    <img
+                    srcset="./images/card-images/card-image-12@2x.png 510w"
+                    src="./images/card-images/card-image-12.png"
+                    alt="Product image"
+                    width="255"
+                    sizes="255px
+                    class="card__image"
+                    />
+                  </div>
+                  <h3 class="card__description">
+                    cool lingerie <span class="card__price">$56</span>
+                  </h3>
+                </a>
+                <div class="card-actions">
+                  <div class="card-actions__pinch">
+                    <button class="card-action action--like">
+                      <svg class="action__icon--like">
+                      <use href="./images/icons/icon-sprite.svg#icon-heart"></use>
+                    </svg></button>
+                    <button class="card-action action--share">
+                      <svg class="action__icon--share">
+                        <use href="./images/icons/icon-sprite.svg#icon-share"></use>
+                      </svg>
+                    </button>
+                    <button class="card-action action--time">
+                      <svg class="action__icon--time">
+                        <use href="./images/icons/icon-sprite.svg#icon-compass2"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="card-action action--cart">
+                    <svg class="action__icon--cart">
+                      <use href="./images/icons/icon-sprite.svg#icon-cart"></use>
+                    </svg>Add to cart</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- latest news -->
+      <section class="latest-news__cover section">
+        <div class="latest-news ">
+          <h2 class="section-title">Latest news</h2>
+        </div>
+        <div class="latest-news__blog container">
+          <ul class="blog">
+            <li class="blog-article">
+              <img
+                srcset="./images/blog-images/blog-img-1@2x.png 700w"
+                src="images/blog-images/blog-img-1.png"
+                alt="tablet"
+                width="350"
+                sizes="350px"
+                class="blog__img"
+              />
+              
+              <h3 class="blog-article__title">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed,
+                libero.
+              </h3>
+              <p class="blog-article__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
+                molestias totam sapiente omnis eum corrupti itaque eveniet aut
+                cum dolorem, vel obcaecati quod debitis quia, quibusdam
+                voluptatem delectus sunt asperiores!
+              </p>
+              <a class="blog-article__link" href="#">Read more</a>
+            </li>
+
+            <li class="blog-article">
+              <img
+              srcset="./images/blog-images/blog-img-2@2x.png 700w"
+              src="images/blog-images/blog-img-2.png"
+              alt="girls"
+              width="350"
+              sizes="350px"
+              class="blog__img"
+              />
+              <h3 class="blog-article__title">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed,
+                libero.
+              </h3>
+              <p class="blog-article__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
+                molestias totam sapiente omnis eum corrupti itaque eveniet aut
+                cum dolorem, vel obcaecati quod debitis quia, quibusdam
+                voluptatem delectus sunt asperiores!
+              </p>
+              <a class="blog-article__link" href="#">Read more</a>
+            </li>
+
+            <li class="blog-article">
+              <img
+              srcset="./images/blog-images/blog-img-3@2x.png 700w"
+              src="images/blog-images/blog-img-3.png"
+              alt="bus"
+              width="350"
+              sizes="350px"
+              class="blog__img"
+              />
+              <h3 class="blog-article__title">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed,
+                libero.
+              </h3>
+              <p class="blog-article__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
+                molestias totam sapiente omnis eum corrupti itaque eveniet aut
+                cum dolorem, vel obcaecati quod debitis quia, quibusdam
+                voluptatem delectus sunt asperiores!
+              </p>
+              <a class="blog-article__link" href="#">Read more</a>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- newsletter -->
+      </section>
+      <section class="newsletter section">
+        <div class="newsletter-cover container">
+          <h2 class="newsletter__title">Newsletter</h2>
+        </div>
+        <p class="newsletter__mail--subscribe">
+          Folow a collection of news &#38; promotions
+        </p>
+        <form class="email-form" action="mailto:info@itntcom">
+          <input
+            class="email-input"
+            type="email"
+            placeholder="Enter your email here"
+          />
+          <button class="email-button" type="submit"></button>
+        </form>
+      </section>
+    </main>
+    <!-- Сюда будет всталена ссылка на файл скриптов -->
+    <!-- inject:js -->
+    <!-- endinject -->
+  </body>
+</html>
